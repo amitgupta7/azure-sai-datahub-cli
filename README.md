@@ -16,7 +16,7 @@ azpwd              = "some secure password atleast 16 char 3-outof-4 of alpha-nu
 ```
 
 NOTE: These are mac instructions (homebrew). Provided as-is.
-``shell
+```shell
 #install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ## install terraform
@@ -35,24 +35,24 @@ $> git clone https://github.com/amitgupta7/azure-sai-datahub-cli.git
 $> source tfAlias
 $> tf init
 $> tfaa
-% null_resource.install_dependencies (remote-exec): testing Datahub Installation by connecting to https://dh.app.securiti.ai/api/gms
-% null_resource.install_dependencies (remote-exec): {
-% null_resource.install_dependencies (remote-exec):   "datasetKey": {
-% null_resource.install_dependencies (remote-exec):     "name": "mysql-1",
-% null_resource.install_dependencies (remote-exec):     "origin": "PROD",
-% null_resource.install_dependencies (remote-exec):     "platform": "urn:li:dataPlatform:mysql"
-% null_resource.install_dependencies (remote-exec):   }
-% null_resource.install_dependencies (remote-exec): }
-% null_resource.install_dependencies: Creation complete after 2m28s [id=2295944877974414921]
-
-% Apply complete! Resources: 8 added, 0 changed, 0 destroyed.
-
-% Outputs:
-
-% ssh_credentials = <<EOT
-% ssh azuser@azure-tf-epod1-amit-jumpbox.westus2.cloudapp.azure.com 
-% with password: #####PASSWORD-REDACTED######
-% EOT
+# null_resource.install_dependencies (remote-exec): testing Datahub Installation by connecting to https://dh.app.securiti.ai/api/gms
+# null_resource.install_dependencies (remote-exec): {
+# null_resource.install_dependencies (remote-exec):   "datasetKey": {
+# null_resource.install_dependencies (remote-exec):     "name": "mysql-1",
+# null_resource.install_dependencies (remote-exec):     "origin": "PROD",
+# null_resource.install_dependencies (remote-exec):     "platform": "urn:li:dataPlatform:mysql"
+# null_resource.install_dependencies (remote-exec):   }
+# null_resource.install_dependencies (remote-exec): }
+# null_resource.install_dependencies: Creation complete after 2m28s [id=2295944877974414921]
+#
+# Apply complete! Resources: 8 added, 0 changed, 0 destroyed.
+#
+# Outputs:
+#
+# ssh_credentials = <<EOT
+# ssh azuser@azure-tf-epod1-amit-jumpbox.westus2.cloudapp.azure.com 
+# with password: #####PASSWORD-REDACTED######
+# EOT
 ## clean-up
 $> tfda
 ```
