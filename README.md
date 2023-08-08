@@ -50,7 +50,7 @@ $> tfaa
 # Outputs:
 #
 # ssh_credentials = <<EOT
-# ssh azuser@azure-tf-epod1-amit-jumpbox.westus2.cloudapp.azure.com 
+# ssh azuser@azure-tf-dh-jumpbox.westus2.cloudapp.azure.com 
 # with password: #####PASSWORD-REDACTED######
 # EOT
 ## clean-up
