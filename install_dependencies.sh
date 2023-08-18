@@ -14,6 +14,7 @@ sudo apt-get install -y python3-pip
 echo "Installing DataHub cli"
 python3 -m pip install --upgrade pip wheel setuptools
 python3 -m pip install --upgrade acryl-datahub
+python3 -m pip install acryl-datahub-actions
 curl -s -X 'GET' \
   'https://app.securiti.ai/privaci/v1/admin/data_catalog/api/generate_session_token' \
   -H 'accept: application/json' \
@@ -28,5 +29,7 @@ gms:
 EOF
 echo "testing Datahub Installation by connecting to $host"
 ~/.local/bin/datahub get --urn "urn:li:dataset:(urn:li:dataPlatform:mysql,mysql-1,PROD)"
+~/.local/bin/datahub ingest -c csv-enricher.dhub.yaml
+
 
 

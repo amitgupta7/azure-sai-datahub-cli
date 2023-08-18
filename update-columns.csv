@@ -1,0 +1,3 @@
+resource,subresource,glossary_terms,tags,owners,ownership_type,description,domain
+"urn:li:dataset:(urn:li:dataPlatform:databricks,dbc-96dd42ad-4bc7.test-metastore.system.information_schema.catalog_privileges,PROD)",grantor,"urn:li:glossaryTerm:Data Classification.Data Elements.Unique identifiers.USER_SECONDARY_ID","urn:li:tag:userid",,,,,
+"urn:li:dataset:(urn:li:dataPlatform:databricks,dbc-96dd42ad-4bc7.test-metastore.system.information_schema.catalog_privileges,PROD)",grantee,"urn:li:glossaryTerm:Data Classification.Data Elements.Unique identifiers.CLIENT_ID","urn:li:tag:Username",,,,,

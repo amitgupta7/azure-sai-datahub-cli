@@ -114,6 +114,16 @@ resource "null_resource" "install_dependencies" {
     destination = "/home/${var.azuser}/install_dependencies.sh"
   }
 
+  provisioner "file" {
+    source = "update-columns.csv"
+    destination = "/home/${var.azuser}/update-columns.csv"
+  }
+
+  provisioner "file" {
+    source = "csv-enricher.dhub.yaml"
+    destination = "/home/${var.azuser}/csv-enricher.dhub.yaml"
+  }
+
   provisioner "remote-exec" {
     on_failure = continue
     inline = [

@@ -1,0 +1,5 @@
+source:
+  type: csv-enricher 
+  config:
+    # relative path to your csv file to ingest
+    filename: ./update-columns.csv
