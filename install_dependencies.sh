@@ -29,7 +29,8 @@ gms:
 EOF
 echo "testing Datahub Installation by connecting to $host"
 ~/.local/bin/datahub get --urn "urn:li:dataset:(urn:li:dataPlatform:mysql,mysql-1,PROD)"
-~/.local/bin/datahub ingest -c csv-enricher.dhub.yaml
+
+## ~/.local/bin/datahub ingest -c csv-enricher.dhub.yaml
 
 
 
